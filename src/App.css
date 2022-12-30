@@ -1,0 +1,169 @@
+/* Fonts Used */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Rammetto+One&display=swap');
+.App {
+    text-align: center;
+}
+/* Universal Selection */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Bcakground-divison */
+.area{
+  background-image:url('./background.jpg');
+  background-size: cover;
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  align-items: center ;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+#title{
+  font-family: 'Rammetto One', cursive;
+  font-size: 4rem;
+  font-weight:normal;
+  color:forestgreen  ;
+  letter-spacing: 0.2vw;
+  -webkit-text-stroke-width: 0.3vh;
+  -webkit-text-stroke-color: black;
+}
+#currScore{
+  background-color: rgb(88, 28, 28);
+  height: 6vh;
+  width: 10vw;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2vw;
+  margin: 2vh;
+}
+.question-card {
+  /* Center the div  */
+  margin: 0 auto;
+
+  /* Dimensions  */
+  width: 80%; /* Can be in percentage also. */
+  height: 60vh;
+
+  /* Visual  */
+  background-color: gray;
+  padding: 2vh;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 1vh 3vh 5vh 0.5vh,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-top: 8px;
+  background-color: darkgray;
+  padding: 2vh;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer ;
+}
+li:hover{
+  background-color: orange;
+  color: black;
+}
+.high{
+  background-color:burlywood;
+  margin: 2vh;
+  color: black;
+
+}
+#add:hover{
+  cursor: pointer;
+  border: 0.1vh solid black;
+} 
+#remove:hover{
+  cursor: pointer;
+  border: 0.1vh solid black;
+
+} 
+.question-text {
+  color: darkblue;
+  font-size: 24px;
+}
+
+/* Final Results  */
+
+.final-results {
+  /* Center the div  */
+  margin: 0 auto;
+
+  /* Dimensions  */
+  width: 60%; /* Can be in percentage also. */
+  height: 40vh;
+  /* margin-top: 64px; */
+
+  /* Visual  */
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 24px;
+  color: black;
+  font-weight: bolder;
+}
+button:hover{
+  background-color: white;
+  color: orange;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+h4{
+  align-items: baselines;
+}
+.question-text.red{
+  color: red;;
+}
+/* Adding Responsiveness to the design */
+@media screen and (max-width: 600px) {
+  #currScore{
+    width: 30vw;
+  }
+  li{
+    padding: 2vh  ;
+  }
+  .high{
+    margin: 1vh;
+  }
+  button{
+    padding: 1vh;
+  }
+  .final-results{
+    width: 80%;
+    height: 45vh;
+
+  }
+}
